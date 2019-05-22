@@ -54,4 +54,4 @@ lado do tabuleiro, execute em outros dois terminais os comandos:
 
 Você pode testar o seu jogador jogando interativamente contra ele
 usando o exemplo2. Basta executar o seu jogador em um terminal e o
-exemplo2 em outro.
+exemplo2 em outro.df
