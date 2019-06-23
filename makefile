@@ -1,15 +1,11 @@
 CFLAGS = -g -Wall -Wno-unused-result -O3
 LDLIBS = -l hiredis -l readline
 
-all: controlador exemplo1 exemplo2 maxplayer
+all: clean controlador exemplo1 
 
 controlador: controlador.c
 
-exemplo1: tabuleiro.h tabuleiro.c exemplo1.c
-
-exemplo2: tabuleiro.h tabuleiro.c exemplo2.c
-
-maxplayer: tabuleiro.h tabuleiro.c maxplayer.c
+exemplo1: lista.h tabuleiro.h tabuleiro.c  aux.c lista.c grafo.c exemplo1.c
 
 clean:
-	rm -f controlador exemplo1 exemplo2 maxplayer
+	rm -f controlador exemplo1 exemplo2
